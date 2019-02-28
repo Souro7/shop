@@ -1,0 +1,35 @@
+/*Page header*/
+
+.navbar {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+}
+
+.home-button {
+    flex: 30;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+.cart-button {
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    padding: 20px 0px 20px 0px;
+}
+
+.menu div {
+    font-size: 0.85rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu-item {
+    flex: 1;
+}
+
+.menu-space {
+    flex: 1.5;
+}
