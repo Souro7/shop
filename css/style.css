@@ -18,7 +18,7 @@
 
 .menu {
     display: flex;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 30px 0px;
 }
 
 .menu div {
@@ -32,4 +32,36 @@
 
 .menu-space {
     flex: 1.5;
+}
+
+/*home page categories section*/
+.main-container{
+     padding: 10px 40px 10px 40px; 
+}
+.categories-item{
+    display: flex;
+    flex-direction: column;
+}
+ .category-image img{
+    max-width: 100%;
+}
+.categories-item div{
+    text-align: center;
+    padding: 20px 0px 20px 0px; 
+}
+.tshirts{
+    display: flex;
+} 
+.tshirt-item .category-image{
+    height: 18rem;
+}
+.tshirt-item div{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.tshirt-item{
+    flex: 1;
+}
+.tshirt-item img{
+    height: 100%;
 }
