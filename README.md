@@ -1,5 +1,5 @@
 # responsive ecommerce website
 
-This is a responsive e-commerce website template built using HTML and CSS.
+This is a single page responsive e-commerce website template built using HTML, CSS and jQuery.
 
 
