@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <title>Home - SHOP</title>
 </head>
 
@@ -31,10 +34,10 @@
         </div>
         <div class="menu">
             <div class="menu-space"></div>
-            <div class="menu-item">Men's Outerwear</div>
-            <div class="menu-item">Ladies Outerwear</div>
-            <div class="menu-item">Men's T-shirts</div>
-            <div class="menu-item">Ladies T-shirts</div>
+            <div class="menu-item" id="men-outer">Men's Outerwear</div>
+            <div class="menu-item" id="ladies-outer">Ladies Outerwear</div>
+            <div class="menu-item" id="men-tshirt">Men's T-shirts</div>
+            <div class="menu-item" id="ladies-tshirt">Ladies T-shirts</div>
             <div class="menu-space"></div>
         </div>
     </div>
@@ -42,7 +45,7 @@
     <div class="main-container">
         <div class="categories-container">
             <!--men outer wear-->
-            <div class="categories-item">
+            <div class="categories-item" id="men-outer-category">
                 <div class="category-image" id="men-outer-img">
                 </div>
                 <div>Men's Outerwear</div>
@@ -51,7 +54,7 @@
                 </div>
             </div>
             <!--ladies outerwear-->
-            <div class="categories-item">
+            <div class="categories-item" id="ladies-outer-category">
                 <div class="category-image" id="ladies-outer-img">
                 </div>
                 <div>Ladies Outerwear</div>
@@ -61,7 +64,7 @@
             </div>
             <div class="tshirts">
                 <!--men tshirts-->
-                <div class="tshirt-item">
+                <div class="tshirt-item" id="men-tshirt-category">
                     <div class="category-image" id="men-tshirt-img">
                     </div>
                     <div>Men's T-shirts</div>
@@ -70,7 +73,7 @@
                     </div>
                 </div>
                 <!--ladies tshirts-->
-                <div class="tshirt-item">
+                <div class="tshirt-item" id="ladies-tshirt-category">
                     <div class="category-image" id="ladies-tshirt-img">
                     </div>
                     <div>Ladies T-shirts</div>
@@ -80,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <!--mens outerwear list-->
+        <!--product list section-->
         <div class="men-outerwear">
             <div class="category-title">Men's Outerwear</div>
             <div class="category-stock">(6 items)</div>
@@ -126,6 +129,52 @@
                     </div>
                     <div class="product-item-name">Generic Men's Outerwear Item</div>
                     <div class="product-item-price">$50</div>
+                </div>
+            </div>
+        </div>
+
+        <!--product details section-->
+        <div class="men-outerwear-product">
+            <div class="product-image">
+                <img src="images/men_outer/men_outerwear_big.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-name">Generic Men's Outerwear Item</div>
+                <div class="product-price">$50</div>
+                <div class="product-sku">
+                    <form>
+                        Size:
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select><br>
+                        Quantity:
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br>
+                    </form>
+                </div>
+                <div class="product-description">
+                    <h4>Description</h4>
+                    <p>A versatile full-zip that you can wear all day long and even to the gym. This technical shell
+                        features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media
+                        player.</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li>100% polyester.</li>
+                        <li>Smooth, technical front with textured mesh back.</li>
+                        <li>Drawstring bottom for adjustable fit.</li>
+                        <li>Raglan sleeves.</li>
+                        <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                    </ul>
+                </div>
+                <div class="add-button">
+                    <div class="button">ADD TO CART</div>
                 </div>
             </div>
         </div>
