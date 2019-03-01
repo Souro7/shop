@@ -35,33 +35,58 @@
 }
 
 /*home page categories section*/
-.main-container{
-     padding: 10px 40px 10px 40px; 
+
+.main-container {
+    padding: 10px 40px 10px 40px;
 }
-.categories-item{
+
+.categories-item {
     display: flex;
     flex-direction: column;
 }
- .category-image img{
-    max-width: 100%;
+
+.category-image {
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.categories-item div{
-    text-align: center;
-    padding: 20px 0px 20px 0px; 
+
+#men-outer-img {
+    background-image: url("../images/mens_outerwear.jpg");
 }
-.tshirts{
-    display: flex;
-} 
-.tshirt-item .category-image{
-    height: 18rem;
+
+#ladies-outer-img {
+    background-image: url("../images/ladies_outerwear.jpg");
 }
-.tshirt-item div{
+
+#men-tshirt-img {
+    background-image: url("../images/mens_tshirts.jpg");
+}
+
+#ladies-tshirt-img {
+    background-image: url("../images/ladies_tshirts.jpg");
+}
+
+.categories-item div {
     text-align: center;
     padding: 20px 0px 20px 0px;
 }
-.tshirt-item{
-    flex: 1;
+
+.tshirts {
+    display: flex;
 }
-.tshirt-item img{
-    height: 100%;
+
+.tshirt-item .category-image {
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tshirt-item div {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.tshirt-item {
+    flex: 1;
 }
