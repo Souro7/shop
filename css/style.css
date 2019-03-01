@@ -138,3 +138,41 @@ body {
     width: 12rem;
     display: inline-block;
 }
+
+/*product list*/
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 1em; */
+}
+
+@media(max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.men-outerwear {
+    text-align: center;
+}
+
+.product-item-img img {
+    max-width: 100%;
+}
+
+.category-title {
+    font-size: 1.2rem;
+}
+
+.category-stock {
+    font-size: 0.8rem;
+}
+
+.product-item-name {
+    font-weight: 110;
+}
+
+.product-item-price {
+    font-size: 0.8rem;
+}
