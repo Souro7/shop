@@ -37,7 +37,7 @@
 /*home page categories section*/
 
 .main-container {
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px 0px 40px;
 }
 
 .categories-item {
@@ -89,4 +89,39 @@
 
 .tshirt-item {
     flex: 1;
+}
+
+/* footer section */
+
+.footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer div {
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+/*custom buttons*/
+
+.button {
+    border: 2px solid #000;
+    cursor: pointer;
+    display: inline-block;
+    width: 12rem;
+}
+
+.button:active {
+    color: #fff;
+    background-color: #000;
+}
+
+.button-footer {
+    color: #fff;
+    background-color: #000;
+    width: 12rem;
+    display: inline-block;
 }
