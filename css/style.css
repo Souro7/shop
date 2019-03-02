@@ -61,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .category-image {
@@ -88,6 +89,7 @@ body {
 .categories-item div {
     text-align: center;
     padding: 10px 10px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tshirts {
