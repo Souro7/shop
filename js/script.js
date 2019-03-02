@@ -1,3 +1,4 @@
+var categoryFlag = 0; // to track category
 $(document).ready(function () {
     //navigating to mens outerwear category
     $("#men-outer, #men-outer-img, #men-outer-category .button").click(function () {
@@ -10,6 +11,7 @@ $(document).ready(function () {
         $('.category-title').text("Men's Outerwear");
         $('.product-item-name').text("Generic Men's Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/men_outerwear_.jpg');
+        categoryFlag = 1;
     });
     //navigating to ladies outerwear category
     $("#ladies-outer, #ladies-outer-img, #ladies-outer-category .button").click(function () {
@@ -22,6 +24,7 @@ $(document).ready(function () {
         $('.category-title').text("Ladies Outerwear");
         $('.product-item-name').text("Generic Ladies Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_outerwear.jpg');
+        categoryFlag = 2;
 
     });
     //navigating to men tshirts category
@@ -37,6 +40,7 @@ $(document).ready(function () {
         $('.category-title').text("Men's T-shirts");
         $('.product-item-name').text("Generic Men's T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/men_tshirt.jpg');
+        categoryFlag = 3;
     });
     //navigating to ladies tshirts category
     $("#ladies-tshirt, #ladies-tshirt-img, #ladies-tshirt-category .button").click(function () {
@@ -51,6 +55,7 @@ $(document).ready(function () {
         $('.category-title').text("Ladies T-shirts");
         $('.product-item-name').text("Generic Ladies T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_tshirt.jpg');
+        categoryFlag = 4;
     });
     //home button functionality
     $('.home-button').click(function () {
@@ -61,6 +66,7 @@ $(document).ready(function () {
         $(".tshirts, .tshirts .tshirt-item, .tshirt-item .tshirt-title, .tshirt-item .button").show();
         $('#men-outer-category .button, #men-outer-category #men-outer-title').show();
         $('#ladies-outer-category .button, #ladies-outer-category #ladies-outer-title').show();
+        categoryFlag = 0;
 
     });
     //navigating to product details page
@@ -71,5 +77,27 @@ $(document).ready(function () {
         $("#ladies-outer-category").hide();
         $("#men-tshirt-category").hide();
         $("#ladies-tshirt-category").hide();
+        switch (categoryFlag) {
+            case 1: {
+                $('.product-name').text("Generic Men's Outerwear");
+                $('.product-image img').attr('src', 'images/product_images/men_outerwear_big.jpg');
+                break;
+            }
+            case 2: {
+                $('.product-name').text("Generic Ladies Outerwear");
+                $('.product-image img').attr('src', 'images/product_images/ladies_outerwear_big.jpg');
+                break;
+            }
+            case 3: {
+                $('.product-name').text("Generic Men's T-shirt");
+                $('.product-image img').attr('src', 'images/product_images/men_tshirt_big.jpg');
+                break;
+            }
+            case 4: {
+                $('.product-name').text("Generic Ladies T-shirt");
+                $('.product-image img').attr('src', 'images/product_images/ladies_tshirt_big.jpg');
+                break;
+            }
+        }
     });
 });
