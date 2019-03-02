@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
@@ -142,22 +143,25 @@
                 <div class="product-name">Generic Men's Outerwear Item</div>
                 <div class="product-price">$50</div>
                 <div class="product-sku">
-                    <form>
-                        Size:
-                        <select>
+                    <p>
+                        <label for="size">Size:</label>
+                        <select id="size">
                             <option value="S">S</option>
                             <option value="M">M</option>
                             <option value="L">L</option>
                             <option value="XL">XL</option>
-                        </select><br>
-                        Quantity:
-                        <select>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                        </select><br>
-                    </form>
+                        </select>
+                    </p>
+
                 </div>
                 <div class="product-description">
                     <h4>Description</h4>
