@@ -37,6 +37,7 @@ $(document).ready(function () {
         $("#ladies-outer-category").show();
         $(".tshirts, .tshirts .tshirt-item, .tshirt-item .tshirt-title, .tshirt-item .button").show();
         $('#men-outer-category .button, #men-outer-category #men-outer-title').show();
+        $('#ladies-outer-category .button, #ladies-outer-category #ladies-outer-title').show();
 
     });
     //navigating to product details page
