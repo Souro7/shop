@@ -7,7 +7,7 @@ $(document).ready(function () {
         $(".tshirts").hide();
         $(".product-list-section").show();
         $('#men-outer-category .button, #men-outer-category #men-outer-title').hide();
-        $('.product-details.section').hide();
+        $('.product-details-section').hide();
         $('.category-title').text("Men's Outerwear");
         $('.product-item-name').text("Generic Men's Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/men_outerwear_.jpg');
