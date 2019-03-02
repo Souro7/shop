@@ -158,7 +158,7 @@ body {
     }
 }
 
-.men-outerwear {
+.product-list-section {
     text-align: center;
 }
 
@@ -197,11 +197,11 @@ body {
 
 /*product details section*/
 
-.men-outerwear {
+.product-list-section {
     display: none;
 }
 
-.men-outerwear-product {
+.product-details-section {
     display: none;
     /* display: flex;  */
     margin-top: 4rem;
@@ -209,7 +209,7 @@ body {
 }
 
 @media(max-width: 768px) {
-    .men-outerwear-product {
+    .product-details-section {
         flex-direction: column;
     }
 }
