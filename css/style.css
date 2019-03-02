@@ -164,6 +164,7 @@ body {
 
 .product-item-img img {
     max-width: 100%;
+    cursor: pointer;
 }
 
 .category-title {
