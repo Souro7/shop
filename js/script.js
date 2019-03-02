@@ -55,5 +55,8 @@ $(document).ready(function () {
         $('.men-outerwear-product').css("display", "flex");
         $(".men-outerwear").hide();
         $("#men-outer-category").hide();
+        $("#ladies-outer-category").hide();
+        $("#men-tshirt-category").hide();
+        $("#ladies-tshirt-category").hide();
     });
 });
