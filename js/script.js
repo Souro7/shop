@@ -6,6 +6,7 @@ $(document).ready(function () {
         $(".tshirts").hide();
         $(".men-outerwear").show();
         $('#men-outer-category .button, #men-outer-category #men-outer-title').hide();
+        $('.men-outerwear-product').hide();
     });
     //navigating to ladies outerwear category
     $("#ladies-outer, #ladies-outer-img, #ladies-outer-category .button").click(function () {
@@ -14,6 +15,7 @@ $(document).ready(function () {
         $(".tshirts").hide();
         $(".men-outerwear").show();
         $('#ladies-outer-category .button, #ladies-outer-category #ladies-outer-title').hide();
+        $('.men-outerwear-product').hide();
     });
     //navigating to men tshirts category
     $("#men-tshirt, #men-tshirt-img, #men-tshirt-category .button").click(function () {
@@ -24,6 +26,7 @@ $(document).ready(function () {
         $(".tshirts #men-tshirt-category").show();
         $(".men-outerwear").show();
         $('#men-tshirt-category .button, #men-tshirt-category #men-tshirt-title').hide();
+        $('.men-outerwear-product').hide();
     });
     //navigating to ladies tshirts category
     $("#ladies-tshirt, #ladies-tshirt-img, #ladies-tshirt-category .button").click(function () {
@@ -34,6 +37,7 @@ $(document).ready(function () {
         $(".tshirts #ladies-tshirt-category").show();
         $(".men-outerwear").show();
         $('#ladies-tshirt-category .button, #ladies-tshirt-category #ladies-tshirt-title').hide();
+        $('.men-outerwear-product').hide();
     });
     //home button functionality
     $('.home-button').click(function () {
