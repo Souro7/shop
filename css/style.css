@@ -162,9 +162,10 @@ body {
     text-align: center;
 }
 
-.product-item-img{
+.product-item-img {
     padding: 3rem 0rem 3rem 0rem;
 }
+
 .product-item-img img {
     max-width: 100%;
     cursor: pointer;
@@ -227,7 +228,12 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 100px 0px 100px;
+}
+
+@media(min-width: 768px) {
+    .product-details {
+        padding: 0px 100px 0px 100px;
+    }
 }
 
 .product-name {
@@ -245,21 +251,25 @@ body {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.product-sku label{
+
+.product-sku label {
     color: #555;
     font-size: 0.9rem;
     display: inline-block;
 }
-.product-sku select{
+
+.product-sku select {
     background-color: transparent;
     border: 0px;
-    width: 80%;
+    width: 60%;
     padding: 10px 0px 10px 10px;
 }
-#quantity{
+
+#quantity {
     margin-left: 1rem;
 }
-#size{
+
+#size {
     margin-left: 3rem;
 }
 
