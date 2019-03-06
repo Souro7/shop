@@ -11,6 +11,8 @@ $(document).ready(function () {
         $('.category-title').text("Men's Outerwear");
         $('.product-item-name').text("Generic Men's Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/men_outerwear_.jpg');
+        $('.cart').hide();
+        $(".menu").show();
         categoryFlag = 1;
     });
     //navigating to ladies outerwear category
@@ -24,6 +26,8 @@ $(document).ready(function () {
         $('.category-title').text("Ladies Outerwear");
         $('.product-item-name').text("Generic Ladies Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_outerwear.jpg');
+        $('.cart').hide();
+        $(".menu").show();
         categoryFlag = 2;
 
     });
@@ -40,6 +44,8 @@ $(document).ready(function () {
         $('.category-title').text("Men's T-shirts");
         $('.product-item-name').text("Generic Men's T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/men_tshirt.jpg');
+        $('.cart').hide();
+        $(".menu").show();
         categoryFlag = 3;
     });
     //navigating to ladies tshirts category
@@ -55,6 +61,8 @@ $(document).ready(function () {
         $('.category-title').text("Ladies T-shirts");
         $('.product-item-name').text("Generic Ladies T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_tshirt.jpg');
+        $('.cart').hide();
+        $(".menu").show();
         categoryFlag = 4;
     });
     //home button functionality
@@ -66,6 +74,8 @@ $(document).ready(function () {
         $(".tshirts, .tshirts .tshirt-item, .tshirt-item .tshirt-title, .tshirt-item .button").show();
         $('#men-outer-category .button, #men-outer-category #men-outer-title').show();
         $('#ladies-outer-category .button, #ladies-outer-category #ladies-outer-title').show();
+        $('.cart').hide();
+        $(".menu").show();
         categoryFlag = 0;
 
     });
@@ -77,6 +87,8 @@ $(document).ready(function () {
         $("#ladies-outer-category").hide();
         $("#men-tshirt-category").hide();
         $("#ladies-tshirt-category").hide();
+        $('.cart').hide();
+        $(".menu").show();
         switch (categoryFlag) {
             case 1: {
                 $('.product-name').text("Generic Men's Outerwear");
@@ -99,5 +111,15 @@ $(document).ready(function () {
                 break;
             }
         }
+    });
+    //navigating to cart page
+    $('.cart-button').click(function () {
+        $('.cart').show();
+        $('.product-details-section').hide();
+        $('.product-list-section').hide();
+        $("#men-outer-category").hide();
+        $("#ladies-outer-category").hide();
+        $(".tshirts").hide();
+        $(".menu").hide();
     });
 });

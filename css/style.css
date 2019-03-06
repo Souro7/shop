@@ -19,6 +19,7 @@ body {
 
 .cart-button {
     flex: 1;
+    cursor: pointer;
 }
 
 .menu {
@@ -287,4 +288,65 @@ body {
 
 .add-button div {
     padding: 10px 20px 10px 20px;
+}
+
+/* cart  section*/
+
+.cart {
+    display: none;
+    text-align: center;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.cart-item-img {
+    height: 5rem;
+    flex: 1;
+}
+
+.cart-item-img img {
+    height: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.cart-item-name {
+    flex: 4;
+}
+
+.cart-item-qty {
+    flex: 1.5;
+}
+
+.cart-item-price {
+    flex: 1.5;
+}
+
+.cart-item-size {
+    flex: 1.5;
+}
+
+.delete-button {
+    flex: 0.5;
+}
+
+.cart-checkout-box {
+    display: flex;
+    padding: 2rem 0rem 4rem 0rem;
+    align-items: center;
+}
+
+.cart-total {
+    flex: 5;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.cart-checkout-box .button {
+    flex: 1;
+    padding: 0.8rem 0.9rem;
 }
