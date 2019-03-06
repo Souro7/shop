@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>Home - SHOP</title>
+    <title>SHOP</title>
 </head>
 
 <body>
@@ -251,6 +251,78 @@
                 </div>
             </div>
 
+        </section>
+        <!--checkout page-->
+        <section class="checkout">
+            <div class="checkout-title">Checkout</div>
+            <div class="checkout-msg">Shop is a demo app - form data will not be sent</div>
+            <div class="checkout-form">
+                <div class="customer-details">
+                    <h5>Account Information</h5>
+                    <div><input type="email" placeholder="Email"></div>
+                    <div><input type="number" placeholder="Phone number"></div>
+                    <h5>Shipping Address</h5>
+                    <div><input type="text" placeholder="Address"></div>
+                    <div><input type="text" placeholder="City"></div>
+                    <div class="flex">
+                        <div><input type="text" placeholder="City/Province"></div>
+                        <div><input type="text" placeholder="Zip/Postal Code"></div>
+                    </div>
+                    <p>Country:</p>
+                    <div>
+
+                        <select class="country">
+                            <option value="US">United States</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <h5>Billing Address</h5>
+                    <div><input type="checkbox">Use a different Billing Address</div>
+                </div>
+
+                <div class="order-details">
+                    <h5>Payment Method</h5>
+                    <div><input type="text" placeholder="Cardholder Name"></div>
+                    <div><input type="text" placeholder="Card Number"></div>
+                    <p>Expiry:</p>
+                    <div class="flex">
+
+                        <div>
+
+                            <select class="month">
+                                <option value="jan">Jan</option>
+                                <option value="feb">Feb</option>
+                                <option value="mar">Mar</option>
+                                <option value="apr">Apr</option>
+                                <option value="may">May</option>
+                                <option value="jun">Jun</option>
+                                <option value="jul">Jul</option>
+                                <option value="aug">Aug</option>
+                                <option value="sep">Sep</option>
+                                <option value="oct">Oct</option>
+                                <option value="nov">Nov</option>
+                                <option value="dec">Dec</option>
+
+                            </select>
+                        </div>
+                        <div>
+
+                            <select class="year">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                            </select>
+                        </div>
+                        <div>
+
+                            <input type="text" placeholder="CVV">
+                        </div>
+                    </div>
+                    <h5>Order Summary</h5>
+                    <div>order summary goes here</div>
+                    <div class="button">PLACE ORDER</div>
+                </div>
+            </div>
         </section>
 
         <!--footer section-->
