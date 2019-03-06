@@ -5,20 +5,29 @@ body {
 /*Page header*/
 
 .navbar {
-    display: flex;
+    /* display: flex; */
+    position: relative;
     padding: 10px 10px 10px 10px;
 }
 
 .home-button {
-    flex: 30;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
+.menu-button {
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+}
+
 .cart-button {
-    flex: 1;
+    /* flex: 1; */
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
     cursor: pointer;
 }
 
