@@ -43,6 +43,7 @@ body {
 .menu-item {
     flex: 1;
     cursor: pointer;
+    text-align: center;
 }
 
 .menu-space {
@@ -290,7 +291,7 @@ body {
 .cart {
     display: none;
     text-align: center;
-    margin: 5rem 5rem 15rem 5rem;
+    margin: 5rem 10rem 15rem 10rem;
     padding: 0rem 2rem 0rem 2rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -550,6 +551,9 @@ body {
     }
     .menu {
         display: none !important;
+    }
+    .cart {
+        margin: 5rem 0rem 5rem 0rem;
     }
     .cart-item-qty, .cart-item-size, .cart-item-price {
         margin-top: 2rem;
