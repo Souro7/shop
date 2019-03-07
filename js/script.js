@@ -74,7 +74,7 @@ $(document).ready(function () {
     });
 
     //home button functionality
-    $('.home-button').click(function () {
+    $('.home-button a').click(function () {
         $("#men-outer-category").show();
         $('.product-details-section').hide();
         $(".product-list-section").hide();

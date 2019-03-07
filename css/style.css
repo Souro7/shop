@@ -64,6 +64,19 @@ body {
     background-repeat: no-repeat;
 }
 
+.image-animate {
+    animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #men-outer-img {
     background-image: url("../images/mens_outerwear.jpg");
 }
@@ -178,8 +191,6 @@ body {
     font-size: 0.9rem;
     color: #555;
     padding: 10px 0px 10px 0px;
-}
-
 }
 
 .product-item-name {
@@ -371,7 +382,7 @@ body {
 .checkout {
     display: none;
     text-align: center;
-    margin: 5rem 5rem 10rem 5rem;
+    margin: 2rem 15rem 10rem 15rem;
     padding: 0rem 2rem 0rem 2rem;
 }
 
@@ -404,16 +415,20 @@ body {
 
 .order-details {
     flex: 1;
-    margin-left: 2rem;
+    margin-left: 8rem;
 }
 
 .flex {
     display: flex;
 }
 
+.flex :last-child {
+    padding-right: 0rem;
+}
+
 .flex div {
     flex: 1;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 1rem 0rem 0rem;
 }
 
 .checkout-title {
@@ -439,6 +454,10 @@ body {
 .order-details .button {
     width: fit-content;
     flex: 0;
+}
+
+#billing {
+    width: 10%;
 }
 
 /*media queries*/
@@ -481,13 +500,17 @@ body {
         margin-top: 2rem;
         text-align: right;
     }
-    .cart-total{
-        padding-right: 0rem; 
+    .cart-total {
+        padding-right: 0rem;
     }
+    /* .cart-item-subsection{
+        flex-direction: column;
+        align-items: flex-start;
+    }*/
 }
 
-@media(min-width: 1300px) {
-    .main-container {
-        padding: 10px 40px 0px 40px;
+@media(min-width: 1435px) {
+    .tshirts {
+        margin: 4.5rem;
     }
 }
