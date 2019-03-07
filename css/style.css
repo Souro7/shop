@@ -410,6 +410,40 @@ body {
     background-color: white;
 }
 
+/*animations for checkout form*/
+
+.checkout-form select {
+    outline: none;
+}
+
+.checkout-form input {
+    display: block;
+    position: relative;
+    background: none;
+    z-index: 2;
+}
+
+.checkout-form label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -22px;
+    left: 0px;
+    transition: all 0.3s ease-in-out;
+    color: #aaa;
+}
+
+.checkout-form input:focus {
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+.checkout-form input:focus+label {
+    top: -40px;
+    font-size: 0.8rem;
+    color: #000;
+}
+
 .customer-details {
     flex: 1;
 }
@@ -506,6 +540,7 @@ body {
         display: none !important;
     }
     .mobile-button {
+        z-index: 3;
         display: block;
         position: fixed;
         bottom: 0;
