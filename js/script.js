@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('.product-item-name').text("Generic Men's Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/men_outerwear_.jpg');
         $('.cart').hide();
-        $(".menu").css("display", "flex");
+        // $(".menu").css("display", "flex");
         $(".checkout").hide();
         categoryFlag = 1;
     });
@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('.product-item-name').text("Generic Ladies Outerwear");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_outerwear.jpg');
         $('.cart').hide();
-        $(".menu").css("display", "flex");
+        // $(".menu").css("display", "flex");
         $(".checkout").hide();
         categoryFlag = 2;
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
         $('.product-item-name').text("Generic Men's T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/men_tshirt.jpg');
         $('.cart').hide();
-        $(".menu").css("display", "flex");
+        // $(".menu").css("display", "flex");
         $(".checkout").hide();
         categoryFlag = 3;
     });
@@ -68,7 +68,7 @@ $(document).ready(function () {
         $('.product-item-name').text("Generic Ladies T-shirt");
         $('.product-item-img img').attr('src', 'images/product_images/ladies_tshirt.jpg');
         $('.cart').hide();
-        $(".menu").css("display", "flex");
+        // $(".menu").css("display", "flex");
         $(".checkout").hide();
         categoryFlag = 4;
     });
@@ -98,7 +98,7 @@ $(document).ready(function () {
         $("#men-tshirt-category").hide();
         $("#ladies-tshirt-category").hide();
         $('.cart').hide();
-        $(".menu").css("display", "flex");
+        // $(".menu").css("display", "flex");
         $(".checkout").hide();
         switch (categoryFlag) {
             case 1: {
@@ -137,7 +137,7 @@ $(document).ready(function () {
     });
 
     //navigating to checkout page
-    $(".cart-checkout-box .button").click(function () {
+    $(".cart-checkout-box .button, .checkout-mobile-button").click(function () {
         $(".checkout").show();
         $('.cart').hide();
         $('.product-details-section').hide();
