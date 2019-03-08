@@ -405,7 +405,7 @@ body {
 
 .checkout-form input, .checkout-form select {
     border: none;
-    border-bottom: 0.1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     width: 100%;
     font-size: 1rem;
     background-color: white;
@@ -436,13 +436,14 @@ body {
 
 .checkout-form input:focus {
     outline: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .checkout-form input:focus+label {
     top: -40px;
-    font-size: 0.8rem;
+    left: -21px;
     color: #000;
+    transform: scale(0.9);
 }
 
 .customer-details {
